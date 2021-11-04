@@ -8,9 +8,9 @@
 
                 <h1 class="mb-3">{{ $post->title }}</h1>
 
-    <p>By. <a href="/authors/{{ $post->author->username}} 
+    <p>By. <a href="/posts?author={{ $post->author->username}} 
         class="text-decoration-none">{{ $Post->author->name }}</a> 
-        <a href="/categories/{{ $post->category->slug }}">{{ $post->category->name }}</a></p>
+        <a href="/posts?category={{ $post->category->slug }}">{{ $post->category->name }}</a></p>
 
         <img src="https://source.unsplash.com/1200x400?{{ $posts->category->name }}" 
         alt="{{ $post->category->name }}" class="img-fluid">
